@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesom link for favourite icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="css/detail.css" />
+    <title>detail</title>
+  </head>
+  <body>
+    <!-- main cointainer  -->
+    <div id="main-container">
+      <header>
+        <div>
+          <!-- logo -->
+          <h2>
+            <!-- logo image link from flateicon -->
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1830/1830839.png"
+            />
+          </h2>
+          <h1 id="food">Foodizone</h1>
+          <h2><a href="home.html">Home</a></h2>
+          <h2><a href="favourite.html">My Favourites </a></h2>
+          <h2><a href="detail.html">Recipe</a></h2>
+        </div>
+      </header>
+      <div id="container">
+        <!-- image container -->
+        <div id="meal-img-container">
+          <span id="main-image"></span>
+        </div>
+        <!-- detail container -->
+        <div id="meal-detail-container">
+          <div id="headings">
+            <div class="detail-class">
+              <h2>Meal Name:</h2>
+              <h3 id="meal-name"></h3>
+            </div>
+            <div class="detail-class">
+              <h2>Meal Category:</h2>
+              <h3 id="category"></h3>
+            </div>
+          </div>
+          <div id="ins">
+            <h2>Instruction:</h2>
+            <p id="instruction"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS file link -->
+    <script src="js/detail.js"></script>
+  </body>
+</html>

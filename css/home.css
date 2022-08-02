@@ -1,0 +1,157 @@
+body {
+  background-color: rgb(248, 221, 186);
+}
+
+header {
+  background-image: linear-gradient(rgb(247, 175, 175), rgb(124, 122, 122));
+}
+/* nav bar propeties logo and header name */
+
+header div {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  color: tomato;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* anchor tag properties */
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+img {
+  width: 65px;
+  height: 65px;
+}
+
+#food {
+  font-size: x-large;
+  font-family: italic;
+  border-radius: 50%;
+  background-color: blanchedalmond;
+  padding-top: 20px;
+}
+
+#take-srch {
+  text-align: center;
+}
+/* search bar properties */
+input {
+  width: 50%;
+  height: 2.2rem;
+  margin-top: 12px;
+  border-radius: 20px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#search-bar {
+  color: black;
+}
+
+/* search Button  */
+#search-btn {
+  width: 5rem;
+  height: 2.3rem;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-size: 0.8rem;
+  color: brown;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#search-btn:hover {
+  border: 2px solid white;
+  background-color: rgb(189, 80, 149);
+  color: white;
+}
+
+/* style external meal list(api meal list) */
+#meals-list {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  width: 25%;
+}
+.meal h2 {
+  text-align: center;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+/* set external image size */
+li img {
+  margin-left: 30px;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.meal-name {
+  display: flex;
+}
+
+.meal-name i {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+/* icon inner color when click on icon  */
+.fav {
+  color: red;
+}
+
+@media screen and (max-width: 900px) {
+  li {
+    width: 45%;
+    margin-bottom: 5px;
+  }
+}
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  li {
+    width: 75%;
+    margin-bottom: 5px;
+    margin-left: 30px;
+  }
+  header div {
+    width: 100%;
+  }
+  #meals-list {
+    margin: 30px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #meals {
+    margin: 0px;
+  }
+  li {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  header div {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    height: 130px;
+  }
+  input {
+    width: 80%;
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+}

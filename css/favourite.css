@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(248, 221, 186);
+}
+
+header {
+  background-image: linear-gradient(rgb(247, 175, 175), rgb(124, 122, 122));
+}
+
+/* nav bar propeties logo and header name */
+header div {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  color: tomato;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* anchor tag properties */
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+img {
+  width: 65px;
+  height: 65px;
+}
+
+#food {
+  font-size: x-large;
+  font-family: italic;
+  border-radius: 50%;
+  background-color: blanchedalmond;
+  padding-top: 20px;
+}
+
+/* style external meal list(api meal list) */
+#meals-list {
+  margin: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+  padding: 10px;
+  width: 25%;
+}
+.meal h2 {
+  text-align: center;
+  margin-left: 35px;
+  cursor: pointer;
+}
+/* set external image size */
+li img {
+  margin-left: 30px;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+.meal-name {
+  display: flex;
+}
+/* icon properties */
+.meal-name i {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+/* icon inner color when click on icon  */
+.fav {
+  color: red;
+}
+/* Responsive design */
+
+@media screen and (max-width: 800px) {
+  li {
+    width: 45%;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  li {
+    width: 75%;
+    margin-bottom: 5px;
+    margin-left: 30px;
+  }
+  header div {
+    width: 100%;
+  }
+  #meals-list {
+    margin: 30px;
+    display: flex;
+  }
+}
